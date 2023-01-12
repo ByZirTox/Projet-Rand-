@@ -2,6 +2,8 @@
 
 namespace App\Controller;
 
+use App\Entity\Vehicules;
+use App\Repository\VehiculesRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -9,10 +11,12 @@ use Symfony\Component\Routing\Annotation\Route;
 class AdminVehiculeController extends AbstractController
 {
     #[Route('/admin/vehicules', name: 'app_admin_vehicule')]
-    public function viewVehicule(): Response
+    public function viewVehicule(VehiculesRepository $vehiculesRepository): Response
     {
+$vehicules = $vehiculesRepository->findAll();
+
         return $this->render('admin_vehicule/vehiculesIndex.html.twig', [
-            'controller_name' => 'AdminVehiculeController',
+            'vehicules' => $vehicules,
         ]);
     }
 
