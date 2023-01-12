@@ -17,7 +17,13 @@
 			{{ encore_entry_script_tags('app') }}
 		{% endblock %}
 	</head>
-
-	{% block body %}{% endblock %}
+	<body>
+		{% block sideBar %}
+        {% include "compenent/_sideBar.html.twig" %}
+		{% endblock %}
+        
+        {% block body %}
+		{% endblock %}
+	</body>
 
 </html>
