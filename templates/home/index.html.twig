@@ -5,13 +5,14 @@
 {% block body %}
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+      aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
       <a class="d-flex justify-content-end navbar-brand" href="#">The Fleeter</a>
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-     
+
       </ul>
       <ul class="nav justify-content-end">
         <li class="nav-item">
@@ -20,7 +21,7 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Location</a>
         </li>
-      
+
         <li class="nav-item">
           <a class="nav-link">Connection</a>
         </li>
@@ -28,4 +29,16 @@
     </div>
   </div>
 </nav>
+
+<footer class="homeFooter container-fluid position-absolute fixed-bottom none">
+  <div class="d-flex justify-content-around homeFooter flex-row-reverse none">
+    <h2 class="d-flex gap-2"><a class="text-decoration-none" href="">Contact</a><svg
+        xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin"
+        viewBox="0 0 16 16">
+    </h2></svg>
+    <h2 class=""><a class=" justify-content-between text-decoration-none" href="/who">Mentions légales</a></h2>
+    <h2 class="none"><a class="text-decoration-none" href="https://www.cnil.fr/fr/mentions-legales">TheFleeter @ 2023</a>
+    </h2>
+  </div>
+</footer>
 {% endblock %}
