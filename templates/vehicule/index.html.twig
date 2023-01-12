@@ -12,41 +12,110 @@
 <div class="col-12  m-5 d-flex justify-content-center">
     <h1>Nos Vehicules disponibles</h1>
 </div>
-    <div class="m-5">
-        <a class="btn btn-dark disabled rounded-4" role="button" aria-disabled="true">Tous</a>
-        <a class="btn btn-primary disabled rounded-4" role="button" aria-disabled="true">Électrique</a>
-        <a class="btn btn-primary disabled rounded-4" role="button" aria-disabled="true">SUV</a>
+<!--boutton-->
+<div class="row">
+    <a class="col-1 btn btn-dark disabled rounded-4" role="button" aria-disabled="true">Tous</a>
+    <a class="col-1 btn btn-primary disabled rounded-4" role="button" aria-disabled="true">Électrique</a>
+    <a class="col-1 btn btn-primary disabled rounded-4" role="button" aria-disabled="true">SUV</a>
+    <!--bare de recherche-->
+    <input id="oSaisie" name="oSaisie" type="text" class="col-6 form-control" aria-label="Saisie de mots clés"
+        required="required">
+    <div class="input-group-append col-1">
+        <button class="btn btn-primary" type="submit">Recherche</button>
     </div>
+</div>
+</div>
+</div>
+<!--fin-->
 </div>
 <div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col">
         <div class="card">
-            <img src="../assets/image/baseImg/tt.png" class="card-img-top" alt="...">
+            <img src="{{ asset('build/image/baseImg/tt.331d6d97.png') }}" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                    content. This content is a little bit longer.</p>
+                <h5 class="card-title text-center">Tesla</h5>
+                <p class="card-text text-center">Model y Long Rang</p>
+                <p class="card-text text-center">À partir de 59 €/jour</p>
+                <div>
+                    <p class="card-text text-center">Pour une location de 10 jour</p>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="col">
         <div class="card">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="{{ asset('build/image/baseImg/tesla-3.06b336cc.jpg') }}" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                    content.</p>
+                <h5 class="card-title text-center">Tesla</h5>
+                <p class="card-text text-center">Model y Long Rang</p>
+                <p class="card-text text-center">À partir de 62 €/jour</p>
+                <div>
+                    <p class="card-text text-center">Pour une location de 10 jour</p>
+                </div>
             </div>
         </div>
     </div>
     <div class="col">
         <div class="card">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="{{ asset('build/image/baseImg/new.d0b5bd33.png') }}" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                    content. This content is a little bit longer.</p>
+                <h5 class="card-title text-center">Fiat 500</h5>
+                <p class="card-text text-center">Model y Long Rang</p>
+                <p class="card-text text-center">À partir de 30 €/jour</p>
+                <div>
+                    <p class="card-text text-center">Pour une location de 10 jour</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-12  m-5 d-flex justify-content-center">
+    <h1>Véhicules du momment</h1>
+</div>
+
+
+
+</div>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+        <div class="card">
+            <img src="{{ asset('build/image/baseImg/tt.331d6d97.png') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-center">Tesla</h5>
+                <p class="card-text text-center">Model y Long Rang</p>
+                <p class="card-text text-center">À partir de 59 €/jour</p>
+                <div>
+                    <p class="card-text text-center">Pour une location de 10 jour</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card">
+            <img src="{{ asset('build/image/baseImg/tesla-3.06b336cc.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-center">Tesla</h5>
+                <p class="card-text text-center">Model y Long Rang</p>
+                <p class="card-text text-center">À partir de 62 €/jour</p>
+                <div>
+                    <p class="card-text text-center">Pour une location de 10 jour</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <img src="{{ asset('build/image/baseImg/new.d0b5bd33.png') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-center">Fiat 500</h5>
+                <p class="card-text text-center">Model y Long Rang</p>
+                <p class="card-text text-center">À partir de 30 €/jour</p>
+                <div>
+                <p class="card-text text-center">Pour une location de 10 jour</p>
+            </div>
             </div>
         </div>
     </div>
