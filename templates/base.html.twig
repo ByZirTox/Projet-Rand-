@@ -11,6 +11,8 @@
 
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
+            {% block javascripts %} {{ encore entry_script_tags ('app ') }} {% endblock %}
+
         {% endblock %}
     </head>
 
