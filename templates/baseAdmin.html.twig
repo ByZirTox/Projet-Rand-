@@ -18,12 +18,18 @@
 		{% endblock %}
 	</head>
 	<body>
-		{% block sideBar %}
-        {% include "component/_sideBar.html.twig" %}
-		{% endblock %}
-        
-        {% block body %}
-		{% endblock %}
-	</body>
-
-</html>
+		<div class="row">
+			<div class="col-2 p-0">
+				{% block sideBar %}
+					{% include "component/_sideBar.html.twig" %}
+				{% endblock %}
+			</div>
+			<div class="col-10 p-0">
+			{% block body %}
+			
+			{% endblock %}
+				</div>
+			</div>
+		</body>
+	</html>
+</body></html>

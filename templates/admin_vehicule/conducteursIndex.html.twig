@@ -1,0 +1,52 @@
+{% extends 'baseAdmin.html.twig' %}
+
+{% block title %}Hello AdminVehiculeController!
+{% endblock %}
+
+{% block body %}
+	<section id="conducteurs">
+		<h2 class="m-3 mt-3 mb-4 fw-bold">Conducteurs</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Nom</th>
+					<th>Numéro de permis</th>
+					<th>Heures de conduite</th>
+					<th>Statut</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>John Smith</td>
+					<td>123456</td>
+					<td>150</td>
+					<td>Actif</td>
+					<td>
+						<a href="#">Ajouter</a>
+						<a href="#">Modifier</a>
+						<a href="#">Supprimer</a>
+					</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Jane Doe</td>
+					<td>654321</td>
+					<td>200</td>
+					<td>Inactif</td>
+					<td>
+						<a href="#">Ajouter</a>
+						<a href="#">Modifier</a>
+						<a href="#">Supprimer</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.min.js"></script>
+	<script>
+		src = "script.js";
+	</script>
+{% endblock %}
