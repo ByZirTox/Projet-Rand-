@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Dashboard de gestion de flotte automobile</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Véhicules</a></li>
+          <li><a href="#">Conducteurs</a></li>
+          <li><a href="#">Amendes</a></li>
+          <li><a href="#">Maintenance</a></li>
+          <li><a href="#">Carburant</a></li>
+          <li><a href="#">Rapports</a></li>
+          <li><a href="#">Import/Export</a></li>
+          <li><a href="#">Comptabilité</a></li>
+          <li><a href="#">Location</a></li>
+          <li><a href="#">Accidents</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="vehicules">
+        <h2>Véhicules</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Marque</th>
+              <th>Modèle</th>
+              <th>Année</th>
+              <th>Conducteur</th>
+              <th>Statut</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Toyota</td>
+              <td>Yaris</td>
+              <td>2022</td>
+              <td>John Doe</td>
+              <td>Disponible</td>
+              <td>
+                <a href="#">Ajouter</a>
+                <a href="#">Modifier</a>
+                <a href="#">Supprimer</a>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Toyota</td>
+              <td>Yaris</td>
+              <td>2021</td>
+              <td>Jane Doe</td>
+              <td>Indisponible</td>
+              <td>
+                <a href="#">Ajouter</a>
+                <a href="#">Modifier</a>
+                <a href="#">Supprimer</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="conducteurs">
+        <h2>Conducteurs</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nom</th>
+              <th>Numéro de permis</th>
+              <th>Heures de conduite</th>
+              <th>Statut</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>John Smith</td>
+              <td>123456</td>
+              <td>150</td>
+              <td>Actif</td>
+              <td>
+                <a href="#">Ajouter</a>
+                <a href="#">Modifier</a>
+                <a href="#">Supprimer</a>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Jane Doe</td>
+              <td>654321</td>
+              <td>200</td>
+              <td>Inactif</td>
+              <td>
+                <a href="#">Ajouter</a>
+                <a href="#">Modifier</a>
+                <a href="#">Supprimer</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="amendes">
+        <h2>Amendes</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Véhicule</th>
+              <th>Conducteur</th>
+              <th>Infraction</th>
+              <th>Montant</th>
+              <th>Statut</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Toyota Yaris (VIN: 123456)</td>
+              <td>John Smith</td>
+              <td>Excès de vitesse</td>
+              <td>150€</td>
+              <td>Payé</td>
+              <td>
+                <a href="#">Ajouter</a>
+                <a href="#">Modifier</a>
+                <a href="#">Supprimer</a>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Toyota Yaris (VIN: 789101)</td>
+              <td>Jane Doe</td>
+              <td>Feux de signalisation</td>
+              <td>75€</td>
+              <td>Non payé</td>
+              <td>
+                <a href="#">Ajouter</a>
+                <a href="#">Modifier</a>
+                <a href="#">Supprimer</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="maintenance">
+        <h2>Maintenance</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Véhicule</th>
+              <th>Type d'entretien</th>
+              <th>Date</th>
+              <th>Coût</th>
+              <th>Statut</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Toyota Yaris (VIN: 123456)</td>
+              <td>Changement d'huile</td>
+              <td>01/01/2022</td>
+              <td>75€</td>
+              <td>Effectué</td>
+              <td>
+                <a href="#">Ajouter</a>
+                <a href="#">Modifier</a>
+                <a href="#">Supprimer</a>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Toyota Yaris (VIN: 789101)</td>
+              <td>Remplacement des freins</td>
+              <td>05/01/2022</td>
+              <td>300€</td>
+              <td>En attente</td>
+              <td>
+                <a href="#">Ajouter</a>
+                <a href="#">Modifier</a>
+                <a href="#">Supprimer</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="carburant">
+        <h2>Carburant</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Véhicule</th>
+              <th>Lieu</th>
+              <th>Litres</th>
+              <th>Coût</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Toyota Yaris (VIN: 123456)</td>
+              <td>Station-service XYZ</td>
+              <td>50</td>
+              <td>125€</td>
+              <td>01/15/2022</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Toyota Yaris (VIN: 789101)</td>
+              <td>Station-service ABC</td>
+              <td>40</td>
+              <td>100€</td>
+              <td>01/20/2022</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="rapports">
+        <h2>Rapports</h2>
+        <form>
+          <label for="date-debut">Date de début:</label>
+          <input type="date" id="date-debut" name="date-debut" />
+          <label for="date-fin">Date de fin:</label>
+          <input type="date" id="date-fin" name="date-fin" />
+          <button type="submit">Générer</button>
+        </form>
+      </section>
+      <section id="import-export">
+        <h2>Import/Export</h2>
+        <form>
+          <label for="import-file">Importer un fichier: </label>
+          <input type="file" id="import-file" name="import-file" />
+          <button type="submit">Importer</button>
+          <a href="#" class="export-link">Exporter les données</a>
+        </form>
+      </section>
+      <section id="comptabilite">
+        <h2>Comptabilité</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Date</th>
+              <th>Description</th>
+              <th>Dépense</th>
+              <th>Recette</th>
+              <th>Solde</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>01/01/2022</td>
+              <td>Achat de véhicule: Toyota Yaris</td>
+              <td>25000€</td>
+              <td></td>
+              <td>25000€</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>01/05/2022</td>
+              <td>Location de véhicule: Toyota Yaris</td>
+              <td></td>
+              <td>500€</td>
+              <td>25500€</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="location">
+        <h2>Location de véhicules</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Véhicule</th>
+              <th>Client</th>
+              <th>Début de la location</th>
+              <th>Fin de la location</th>
+              <th>Coût</th>
+              <th>Statut</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Toyota Yaris (VIN: 123456)</td>
+              <td>John Smith</td>
+              <td>01/10/2022</td>
+              <td>01/15/2022</td>
+              <td>750€</td>
+              <td>Terminé</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Toyota Yaris (VIN: 789101)</td>
+              <td>Jane Doe</td>
+              <td>02/01/2022</td>
+              <td>02/07/2022</td>
+              <td>900€</td>
+              <td>En cours</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="accidents">
+        <h2>Accidents</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Véhicule</th>
+              <th>Conducteur</th>
+              <th>Lieu</th>
+              <th>Date</th>
+              <th>Dommages</th>
+              <th>Coûts</th>
+              <th>Statut</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Toyota Yaris(VIN: 123456)</td>
+              <td>John Smith</td>
+              <td>Rue Main et 1ère avenue</td>
+              <td>03/01/2022</td>
+              <td>Aile gauche endommagée</td>
+              <td>2500€</td>
+              <td>Réglé</td>
+              <td>
+                <a href="#">Ajouter</a>
+                <a href="#">Modifier</a>
+                <a href="#">Supprimer</a>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Toyota Yaris (VIN: 789101)</td>
+              <td>Jane Doe</td>
+              <td>Boulevard Centre et 3ème rue</td>
+              <td>04/15/2022</td>
+              <td>Pare-chocs avant endommagé</td>
+              <td>1000€</td>
+              <td>Non réglé</td>
+              <td>
+                <a href="#">Ajouter</a>
+                <a href="#">Modifier</a>
+                <a href="#">Supprimer</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="chartcontainer">
+          <canvas id="barCanvas" aria-label="chart" role="img"></canvas>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>TheFleeter Copyright 2023 - Dashboard</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.min.js"></script>
+    <script>
+      src = "script.js";
+    </script>
+  </body>
+</html>
