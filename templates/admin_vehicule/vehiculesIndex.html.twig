@@ -18,27 +18,17 @@
 					<th>Actions</th>
 				</tr>
 			</thead>
+			{% for vehicule in vehicules %}
 			<tbody>
 				<tr>
-					<td>1</td>
-					<td>Toyota</td>
-					<td>Yaris</td>
-					<td>2022</td>
-					<td>John Doe</td>
-					<td>Disponible</td>
 					<td>
-						<a href="#">Ajouter</a>
-						<a href="#">Modifier</a>
-						<a href="#">Supprimer</a>
+						{{ vehicule.id }}
 					</td>
-				</tr>
-				<tr>
-					<td>2</td>
-					<td>Toyota</td>
-					<td>Yaris</td>
-					<td>2021</td>
-					<td>Jane Doe</td>
-					<td>Indisponible</td>
+					<td>{{ vehicule.marque }}</td>
+					<td>{{ vehicule.modele }}</td>
+					<td>{{ vehicule.annee }}</td>
+					<td>Billy Doe</td>
+					<td>{{ vehicule.status }}</td>
 					<td>
 						<a href="#">Ajouter</a>
 						<a href="#">Modifier</a>
@@ -46,6 +36,7 @@
 					</td>
 				</tr>
 			</tbody>
+			{% endfor %}
 		</table>
 	</section>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.min.js"></script>
