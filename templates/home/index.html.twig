@@ -1,12 +1,59 @@
-{% extends 'base.html.twig' %}
-
-{% block title %}Hello HomeController!{% endblock %}
-
-{% block body %}
+{% extends 'base.html.twig' %} {% block title %}The fleeter{%
+endblock %} {% block body %}
 <header class="headerImg d-flex flex-column">
-		{% block navbar %}
-			{% include "./component/_navbar.html.twig"%}
-		{% endblock %}
-    {% include "./component/_header.html.twig" %}
+	{% block navbar %} {% include "./component/_navbar.html.twig"%} {% endblock %}
+	{% include "./component/_header.html.twig" %}
 </header>
+<section class="bg-dark">
+	<div class="d-flex flex-column">
+		<h2 class="text-light align-items-center justify-content-center m-auto pb-5 p-3">
+			Explorez les offres Fleeter
+		</h2>
+	</div>
+	<div class="d-flex justify-content-between m-auto gap-3">
+		<div class="card ms-3" style="width: 18rem">
+			<img class="card-img-top mt-5 mb-5" src="{{ asset('build/image/DL_VH-ELECTRIQUE_7-removebg-preview.png') }}"
+				alt="Card image cap" />
+			<div class="card-body">
+				<p class="card-text mt-5 me-3">
+					<h3>Large choix de véhicule sur le parc</h3>
+					Plusieurs modèles selon 
+					le besoin du client
+				</p>
+				<a href="#" class="btncard btn btn-outline-info">Réservez votre véhicule</a>
+			</div>
+		</div>
+		<div class="card" style="width: 18rem">
+			<img class="card-img-top" src="{{ asset('build/image/10.jpeg') }}" alt="Third slide" />
+			<div class="card-body">
+				<p class="card-text mt-3 me-3">
+					<h3>Service Premium á la porte</h3>
+					faites vous livrer votre vehicule avec un
+					service premium
+				</p>
+				<a href="#" class="btn btn-outline-info">Info offre Premium</a>
+			</div>
+		</div>
+		<div class="card me-3" style="width: 18rem">
+			<img class="card-img-top" src="{{
+          asset(
+            'build/image/golden-symbol-exclusivity-label-vip-service-with-glitter-very-important-person-vip-icon_123447-3792-1-removebg-preview.png'
+          )
+        }}" alt="Second slide"/>
+			<div class="card-body">
+				<p class="card-text mt-3 me-3">
+					<h3>La location longue durée</h3>
+					Location longue durée avec offre promotionnelle
+				</p>
+				<a href="#" class="btn btn-outline-info">Réservez votre véhicule</a>
+			</div>
+		</div>
+	</div>
+	<div class="btnvehiculesaccess d-flex justify-content-center m-auto pt-5 pb-5">
+		<button type="button" class="btn btn-outline-blue bg-white">
+			Voir nos vehicules disponibles
+		</button>
+	</div>
+</section>
+{% include "./component/_footer.html.twig" %}
 {% endblock %}
