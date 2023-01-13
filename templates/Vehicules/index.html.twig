@@ -1,0 +1,183 @@
+{% extends 'base.html.twig' %} {% block title %}The fleeter{% endblock %} {% block body %}
+<header class="headerImg d-flex flex-column">
+    {% block navbar %} {% include "./component/_navbar.html.twig"%} {% endblock %}
+    {% include "./component/_header.html.twig" %}
+</header>
+<div class="textvehicles d-flex fs-1 justify-content-center m-auto mt-4 mb-4">
+    <h1>Nos Véhicules disponibles</h1>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div id="news-slider" class="owl-carousel">
+
+                <div class="post-slide">
+                    <div class="post-img">
+                        <img src="{{ asset('build/image/peugeot208front.png') }}" alt="">
+                        <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                    </div>
+                    <div class="post-content">
+                        <h3 class="post-title">
+                            <a href="#">Peugeot E-208</a>
+                        </h3>
+                        <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+                            consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae
+                            tempora......</p>
+                        <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2022</span>
+                        <a href="#" class="read-more">louer ce vehicule</a>
+                    </div>
+                </div>
+
+                <div class="post-slide">
+                    <div class="post-img">
+                        <img src="{{ asset('build/image/capture.png') }}" alt="">
+                        <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                    </div>
+                    <div class="post-content">
+                        <h3 class="post-title">
+                            <a href="#">Renault Capture 2022</a>
+                        </h3>
+                        <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+                            consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae
+                            tempora......</p>
+                        <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2022</span>
+                        <a href="#" class="read-more">louer ce vehicule</a>
+                    </div>
+                </div>
+
+                <div class="post-slide">
+                    <div class="post-img">
+                        <img src="{{ asset('build/image/fiat500.png') }}" alt="">
+                        <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                    </div>
+                    <div class="post-content">
+                        <h3 class="post-title">
+                            <a href="#">2022 Fiat 500</a>
+                        </h3>
+                        <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+                            consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae
+                            tempora......</p>
+                        <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2022</span>
+                        <a href="#" class="read-more">louer ce vehicule</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-4">
+            <div class="post-slide">
+                <div class="post-img">
+                    <img src="{{ asset('build/image/kia2022.png') }}" alt="">
+                    <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                </div>
+                <div class="post-content">
+                    <h3 class="post-title">
+                        <a href="#">Kia K5 GT 2021</a>
+                    </h3>
+                    <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+                        consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......
+                    </p>
+                    <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2021</span>
+                    <a href="#" class="read-more">louer ce vehicule</a>
+                </div>
+            </div>
+
+
+            <div class="post-slide">
+                <div class="post-img">
+                    <img src="{{ asset('build/image/tesla3.png') }}" alt="">
+                    <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                </div>
+                <div class="post-content">
+                    <h3 class="post-title">
+                        <a href="#">Tesla Model 3</a>
+                    </h3>
+                    <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+                        consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......
+                    </p>
+                    <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2022</span>
+                    <a href="#" class="read-more">louer ce vehicule</a>
+                </div>
+            </div>
+
+            <div class="post-slide">
+                <div class="post-img">
+                    <img src="{{ asset('build/image/citroami.png') }}" alt="">
+                    <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                </div>
+                <div class="post-content">
+                    <h3 class="post-title">
+                        <a href="#">Citroën Ami 2022</a>
+                    </h3>
+                    <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+                        consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......
+                    </p>
+                    <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2022</span>
+                    <a href="#" class="read-more">louer ce vehicule</a>
+                </div>
+            </div>
+        </div>
+  
+
+    <div class="col-md-4">
+        <div class="post-slide">
+            <div class="post-img">
+                <img src="{{ asset('build/image/mercedesbenz.png') }}" alt="">
+                <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+            </div>
+            <div class="post-content">
+                <h3 class="post-title">
+                    <a href="#">Mercedes-Benz Classe C 2022</a>
+                </h3>
+                <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+                    consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......
+                </p>
+                <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2022</span>
+                <a href="#" class="read-more">louer ce vehicule</a>
+            </div>
+        </div>
+
+        <div class="post-slide">
+            <div class="post-img">
+                <img src="{{ asset('build/image/2022audietron.png') }}" alt="">
+                <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+            </div>
+            <div class="post-content">
+                <h3 class="post-title">
+                    <a href="#">2022 Audi E-tron Sportback</a>
+                </h3>
+                <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+                    consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae
+                    tempora......</p>
+                <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2022</span>
+                <a href="#" class="read-more">louer ce vehicule</a>
+            </div>
+        </div>
+
+        <div class="post-slide">
+            <div class="post-img">
+                <img src="{{ asset('build/image/peugeot208front.png') }}" alt="">
+                <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+            </div>
+            <div class="post-content">
+                <h3 class="post-title">
+                    <a href="#">2022 Audi E-tron Sportback</a>
+                </h3>
+                <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+                    consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae
+                    tempora......</p>
+                <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2022</span>
+                <a href="#" class="read-more">louer ce vehicule</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+{% include "./component/_footer.html.twig" %}
+{% endblock %}
