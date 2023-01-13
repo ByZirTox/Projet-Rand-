@@ -12,24 +12,19 @@
 		{% block stylesheets %}
 			{{ encore_entry_link_tags('app') }}
 		{% endblock %}
-
-		{% block javascripts %}
-			{{ encore_entry_script_tags('app') }}
-		{% endblock %}
 	</head>
-	<body>
+	<body class="container-fluid">
 		<div class="row">
 			<div class="col-2 p-0">
 				{% block sideBar %}
 					{% include "component/_sideBar.html.twig" %}
 				{% endblock %}
 			</div>
-			<div class="col-10 p-0">
-			{% block body %}
-			
-			{% endblock %}
+			<div class="col-10 p-0"> {% block body %}{% endblock %}
 				</div>
 			</div>
 		</body>
+		{% block javascripts %}
+			{{ encore_entry_script_tags('app') }}
+		{% endblock %}
 	</html>
-</body></html>
